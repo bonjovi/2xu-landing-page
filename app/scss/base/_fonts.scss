@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'Din Cond Medium';
+    src: url('../fonts/DINPro-CondMedium_0.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Din Bold';
     src: url('../fonts/DINProBold.woff') format('woff');
     font-weight: normal;
@@ -38,8 +45,4 @@
     src: url('../fonts/DINProBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-body {
-    background-color: $darkgold;
 }
