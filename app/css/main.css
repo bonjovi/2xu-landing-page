@@ -35,4 +35,22 @@
   font-style: normal; }
 
 body {
-  background-color: #b59638; }
+  background-color: #907d4e; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 700px;
+  background-image: url("img/header.jpg"); }
+
+.header {
+  width: 100%;
+  height: 700px;
+  background-image: url("img/header.jpg"); }
+
+.wrapper {
+  width: 1666200px;
+  margin: 0 auto; }
