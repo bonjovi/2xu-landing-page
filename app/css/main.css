@@ -467,12 +467,26 @@ template {
       font-size: 3rem; }
   .header__list {
     list-style-image: url("../../app/img/check.png");
-    padding: 28px 28px 28px 80px; }
+    padding: 38px 28px 28px 80px; }
   .header__item {
     padding-left: 15px;
     margin-bottom: 28px;
     font-family: 'OpenSans Regular';
     font-size: 1.1rem; }
+
+.conditions {
+  padding: 40px 0; }
+  .conditions__icons {
+    display: flex;
+    justify-content: space-around; }
+  .conditions__icon {
+    text-align: center; }
+  .conditions__title {
+    margin-top: 10px;
+    color: #000000;
+    font-family: 'Din Regular';
+    text-transform: uppercase;
+    line-height: 1rem; }
 
 .wrapper {
   width: 1200px;

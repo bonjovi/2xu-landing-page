@@ -51,7 +51,7 @@
 
 	&__list {
 		list-style-image: url('../../app/img/check.png');
-		padding: 28px 28px 28px 80px;
+		padding: 38px 28px 28px 80px;
 	}
 
 	&__item {
@@ -60,6 +60,27 @@
 		font-family: 'OpenSans Regular';
 		font-size: 1.1rem;
 	}
+}
+.conditions {
+	padding: 40px 0;
+
+	&__icons {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__icon {
+		text-align: center
+	}
+
+	&__title {
+		margin-top: 10px;
+		color: $black;
+		font-family: 'Din Regular';
+		text-transform: uppercase;
+		line-height: 1rem;
+	}
+
 }
 .wrapper {
 	width: 1200px;
