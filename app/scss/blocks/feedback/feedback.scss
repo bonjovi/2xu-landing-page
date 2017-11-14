@@ -1,0 +1,37 @@
+.feedback {
+	background-color: $darkgrey;
+	padding: 42px 0 44px 0;
+
+	&__form {
+		margin: 34px 0 10px 0;
+	}
+
+	&__row {
+		display: flex;
+		margin-bottom: 30px;
+	}
+
+	&__input {
+		display: flex;
+		border: 1px solid #797979;
+		background-color: #3e3e3e;
+		padding: 22px;
+		margin-right: 30px;
+		outline-color: $darkgold;
+		width: 100%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__textarea {
+		width: 100%;
+		border: 1px solid #797979;
+		background-color: #3e3e3e;
+		padding: 22px;
+		outline-color: $darkgold;
+		height: 64px;
+    	box-sizing: border-box;
+	}
+}

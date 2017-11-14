@@ -1,0 +1,45 @@
+.owl-carousel {
+	position: relative;
+	margin-top: 52px;
+
+	.owl-item {
+		img {
+			width: fit-content;
+		}
+	}
+
+	.owl-nav.disabled {
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 110%;
+		margin-left: -5%;
+		margin-top: 170px;
+
+		.owl-prev {
+			width: 40px;
+			height: 40px;
+			border: 3px solid $grey;
+			border-radius: 3px;
+			transform: rotate(-45deg);
+			text-indent: -9999px;
+			border-bottom: none;
+			border-right: none;
+			top: 0;
+		}
+
+		.owl-next {
+			width: 40px;
+			height: 40px;
+			border: 3px solid $grey;
+			border-radius: 3px;
+			text-indent: -9999px;
+			transform: rotate(45deg);
+			border-bottom: none;
+			border-left: none;
+			top: 0;
+			margin-top: -40px;
+			float: right;
+		}
+	}
+}

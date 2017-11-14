@@ -1,4 +1,6 @@
 .models {
+	padding: 90px 0 40px 0;
+	background-color: #f7f7f7; 
 
 	&__star {
 		margin-top: -10px;
@@ -8,12 +10,15 @@
 		color: $grey;
 		font-family: 'Din Regular';
 		font-size: 14px;
+		display: block;
+    	margin-top: 16px;
 	}
 
 	&__tabs {
 		display: flex;
 		list-style: none;
 		padding: 0;
+		margin: 47px 0;
 	}
 
 	&__tab {
@@ -24,6 +29,7 @@
 		background-color: $darkgrey;
 		color: $white;
 		cursor: pointer;
+		width: 100%;
 
 		&:hover, &_active {
 			background-color: transparent;
@@ -41,7 +47,7 @@
 	}
 
 	&__left {
-		width: 45%;
+		width: 57%;
 	}
 
 	&__sku {
@@ -49,12 +55,11 @@
 		font-family: 'Din Regular';
 		font-size: 14px;
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 	}
 
 	&__image {
 		margin-bottom: 40px;
-		width: 100%;
 	}
 
 	&__download {
@@ -76,7 +81,7 @@
 	}
 
 	&__right {
-		width: 55%;
+		width: 43%;
 		margin-left: 40px;
 	}
 
@@ -84,11 +89,14 @@
 		font-family: 'OpenSans Regular';
 		font-size: 1rem;
 		color: $grey;
+		line-height: 1.5rem;
+		margin: 4px 0;
 	}
 
 	&__list {
 		list-style-type: none;
-		line-height: 2rem;
+		line-height: 1.7rem;
+    	margin-top: 10px;
 	}
 
 	&__item {
@@ -100,11 +108,12 @@
 	&__colors {
 		display: flex;
 		justify-content: space-between;
-		margin: 40px 0;
+		margin: 29px 0 33px 0;
 	}
 
 	&__color {
 		text-align: center;
+		margin-right: 20px;
 	}
 
 	&__circle {
@@ -119,6 +128,7 @@
 
 		&_grey {
 			background-color: $grey;
+			margin: 0 auto 10px auto;
 		}
 
 		&_white {
@@ -144,5 +154,63 @@
 		font-family: 'OpenSans Regular';
 		font-size: 1rem;
 		color: $grey;
+	}
+
+	&__price {
+		padding: 36px 85px 36px 168px;
+	    background-color: #907d4e;
+	    display: flex;
+	    width: fit-content;
+	    align-items: center;
+	    margin-top: 30px;
+	    margin-left: 20px;
+	}
+
+	&__pricetext {
+		font-family: 'OpenSans Regular';
+		font-size: 1rem;
+		color: $white;
+		margin-right: 20px;
+	}
+
+	&__pricenumber {
+		font-family: 'Din Cond Medium';
+		font-size: 2rem;
+		color: $white;
+	}
+
+	&__tabletitle {
+		font-family: 'Din Cond Medium';
+		font-size: 1.5rem;
+		color: $black;
+		margin-bottom: 34px;
+    	margin-top: 80px;
+	}
+
+	&__table {
+		border-collapse:collapse;
+		background-color:$white;
+		margin-bottom: 28px;
+		width: 100%;
+	}
+
+	&__th {
+		padding:16px 10px;
+		font-family: 'OpenSans Regular';
+		font-size: 1rem;
+		color: $lightgold;
+		margin-bottom: 40px;
+		text-align: center;
+		border:1px solid $lightgrey;
+	}
+
+	&__td {
+		padding:16px 10px;
+		font-family: 'OpenSans Regular';
+		font-size: 1rem;
+		color: $black;
+		margin-bottom: 40px;
+		text-align: center;
+		border:1px solid $lightgrey;
 	}
 }

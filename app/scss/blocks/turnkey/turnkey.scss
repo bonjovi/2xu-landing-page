@@ -1,0 +1,43 @@
+.turnkey {
+	padding: 32px 0 56px 0;
+	background-color: $darkgold;
+
+	&__figures {
+		display: flex;
+	    align-items: baseline;
+	    margin-top: 33px;
+	    justify-content: center;
+	}
+
+	&__price {
+		text-align: center;
+    	width: 278px;
+	}
+
+	&__number {
+		color: #ffffff;
+	    font-family: 'Din Cond Medium';
+	    font-size: 58px;
+	    padding: 8px 0;
+	    border: 2px solid #ffffff;
+	    border-radius: 28px;
+	    width: 224px;
+	    margin: 0 auto;
+	}
+
+	&__desc {
+		color: $white;
+		font-family: 'Din Regular';
+		font-size: 24px;
+		padding-top: 11px;
+	}
+
+	&__separator {
+		background-color: #c7bda6;
+	    width: 2px;
+	    height: 28px;
+	    margin-left: 100px;
+	    margin-right: 115px;
+	    margin-top: -50px;
+	}
+}

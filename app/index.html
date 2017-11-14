@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title>2XU</title>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
 </head>
 <body>
-
- 
 
 <section class="header">
 	<div class="wrapper">
@@ -32,24 +33,34 @@
 	<div class="wrapper">
 		<div class="conditions__icons">
 			<div class="conditions__icon">
-				<img src="img/order-here.png" alt="">
-				<div class="conditions__title">Заказ здесь</div>
+				<div class="conditions__image">
+					<img src="img/order-here.png" alt="">
+				</div>	
+				<div class="conditions__title">Заказ <strong>здесь</strong></div>
 			</div>
 			<div class="conditions__icon">
-				<img src="img/t-shirt.png" alt="">
-				<div class="conditions__title">ОТ 5 АРТ.<br>одного дизайна<br>в любых размерах</div>
+				<div class="conditions__image">
+					<img src="img/t-shirt.png" alt="">
+				</div>
+				<div class="conditions__title"><strong>ОТ 5 АРТ.</strong><br>одного дизайна<br>в любых размерах</div>
 			</div>
 			<div class="conditions__icon">
-				<img src="img/made-in-australia.png" alt="">
-				<div class="conditions__title">Разработка<br>в Австралии</div>
+				<div class="conditions__image">
+					<img src="img/made-in-australia.png" alt="">
+				</div>	
+				<div class="conditions__title">Разработка<br><strong>в Австралии</strong></div>
 			</div>
 			<div class="conditions__icon">
-				<img src="img/asia.png" alt="">
-				<div class="conditions__title">Производство<br>в Юго-Восточной Азии<br>на фабрике 2XU </div>
+				<div class="conditions__image">
+					<img src="img/asia.png" alt="">
+				</div>	
+				<div class="conditions__title">Производство<br><strong>в Юго-Восточной Азии<br>на фабрике 2XU</strong> </div>
 			</div>
 			<div class="conditions__icon">
-				<img src="img/delivery-ownself.png" alt="">
-				<div class="conditions__title">Доставим сами<br>и передадим в руки </div>
+				<div class="conditions__image">
+					<img src="img/delivery-ownself.png" alt="">
+				</div>	
+				<div class="conditions__title"><strong>Доставим сами<br>и передадим в руки</strong> </div>
 			</div>
 		</div>
 	</div>
@@ -96,7 +107,7 @@
 			</div>
 			<div class="models__right">
 				<p class="models__text">Состав ткани: 100% полиэстер</p>
-				<p class="models__text">Черные детали выполнены из компрессионной ткани 2XU SBR POWER и могут<br>иметь цвет на выбор:</p>
+				<p class="models__text">Черные детали выполнены из компрессионной ткани 2XU SBR POWER и могут иметь цвет на выбор:</p>
 				<div class="models__colors">
 					<div class="models__color">
 						<div class="models__circle models__circle_black"></div>
@@ -129,32 +140,146 @@
 					<li class="models__item">- с рисунком</li>
 					<li class="models__item">- с иммитацией фактуры</li>
 				</ul>
+				<div class="models__price">
+					<div class="models__pricetext">
+						Цена под ключ:
+					</div>
+					<div class="models__pricenumber">
+						14 500 р
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<h3 class="models__tabletitle">Выбрать размер</h3>
+		<table class="models__table" cellspacing="0">
+			<thead>
+				<tr>
+					<th class="models__th">Триатлон мужчины</th>
+					<th class="models__th">XS</th>
+					<th class="models__th">S</th>
+					<th class="models__th">M</th>
+					<th class="models__th">L</th>
+					<th class="models__th">XL</th>
+					<th class="models__th">XXL</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="models__td">Окружность груди</td>
+					<td class="models__td">79 - 85см 31 - 33”</td>
+					<td class="models__td">86 - 94см 34 - 37”</td>
+					<td class="models__td">95 - 102см 38 - 40”</td>
+					<td class="models__td">103 - 109см 41 - 43”</td>
+					<td class="models__td">110 - 119см 44 - 47”</td>
+					<td class="models__td">120 - 127см 47 - 50”</td>
+				</tr>
+				<tr>
+					<td class="models__td">Окружность талии</td>
+					<td class="models__td">79 - 85см 31 - 33”</td>
+					<td class="models__td">86 - 94см 34 - 37”</td>
+					<td class="models__td">95 - 102см 38 - 40”</td>
+					<td class="models__td">103 - 109см 41 - 43”</td>
+					<td class="models__td">110 - 119см 44 - 47”</td>
+					<td class="models__td">120 - 127см 47 - 50”</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="models__text">Для точного подбора размера в розничном магазине представлены образцы всей размерной линейки!<br>
+		Открыты: 10 - 21:00 пн-суб Москва, Пресненская наб., д.8 МФК Город Столиц (м.Выставочная) 3 этаж, слева от фитнес центра World Class <br></p>
 	</div>
 </section>
 
 <section class="lookbook">
 	<div class="wrapper">
-		
+		<h2 class="heading">Лук-бук</h2>
+		<div class="owl-carousel">
+			<div class="owl-carousel__slide">
+				<img src="img/lookbook1.png" alt="">
+			</div>
+			<div class="owl-carousel__slide">
+				<img src="img/lookbook2.png" alt="">
+			</div>
+			<div class="owl-carousel__slide">
+				<img src="img/lookbook3.png" alt="">
+			</div>
+			<div class="owl-carousel__slide">
+				<img src="img/lookbook4.png" alt="">
+			</div>
+		</div>
 	</div>
 </section>
 
 <section class="turnkey">
 	<div class="wrapper">
-		
+		<h2 class="heading heading_white">Цена под ключ</h2>
+		<div class="turnkey__figures">
+			<div class="turnkey__price">
+				<div class="turnkey__number">14 500 р</div>
+				<div class="turnkey__desc">с удлинёнными рукавами</div>
+			</div>
+			<div class="turnkey__separator"></div>
+			<div class="turnkey__price">
+				<div class="turnkey__number">13 500 р</div>
+				<div class="turnkey__desc">без рукавов</div>
+			</div>
+		</div>
 	</div>
 </section>
 
 <section class="feedback">
 	<div class="wrapper">
-		
+		<h2 class="heading heading_lowercase">Интересно, хочу заказать, есть вопросы, свяжитесь со мной!</h2>
+		<form action="#" class="feedback__form">
+			<div class="feedback__row">
+				<input type="text" class="feedback__input" placeholder="Имя">
+				<input type="text" class="feedback__input" placeholder="Электронный адрес">
+				<input type="text" class="feedback__input" placeholder="Телефон">
+			</div>
+			<textarea name="" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Комментарии"></textarea>
+			<div class="feedback__row">
+				<input type="file" class="feedback__input" placeholder="Прикрепить файл">
+				<input type="submit" class="feedback__input" placeholder="Отправить">
+			</div>
+		</form>
 	</div>
 </section>
 
 <section class="conditions">
 	<div class="wrapper">
-		
+		<h2 class="heading">Условия заказа</h2>
+		<div class="conditions__icons">
+			<div class="conditions__icon">
+				<div class="conditions__image">
+					<img src="img/order-here.png" alt="">
+				</div>	
+				<div class="conditions__title">Заказ <strong>здесь</strong></div>
+			</div>
+			<div class="conditions__icon">
+				<div class="conditions__image">
+					<img src="img/t-shirt.png" alt="">
+				</div>
+				<div class="conditions__title"><strong>ОТ 5 АРТ.</strong><br>одного дизайна<br>в любых размерах</div>
+			</div>
+			<div class="conditions__icon">
+				<div class="conditions__image">
+					<img src="img/made-in-australia.png" alt="">
+				</div>	
+				<div class="conditions__title">Разработка<br><strong>в Австралии</strong></div>
+			</div>
+			<div class="conditions__icon">
+				<div class="conditions__image">
+					<img src="img/asia.png" alt="">
+				</div>	
+				<div class="conditions__title">Производство<br><strong>в Юго-Восточной Азии<br>на фабрике 2XU</strong> </div>
+			</div>
+			<div class="conditions__icon">
+				<div class="conditions__image">
+					<img src="img/delivery-ownself.png" alt="">
+				</div>	
+				<div class="conditions__title"><strong>Доставим сами<br>и передадим в руки</strong> </div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -184,7 +309,18 @@
 
 <section class="turnkey">
 	<div class="wrapper">
-		
+		<h2 class="heading heading_white">Цена под ключ</h2>
+		<div class="turnkey__figures">
+			<div class="turnkey__price">
+				<div class="turnkey__number">14 500 р</div>
+				<div class="turnkey__desc">с удленёнными рукавами</div>
+			</div>
+			<div class="turnkey__separator"></div>
+			<div class="turnkey__price">
+				<div class="turnkey__number">13 500 р</div>
+				<div class="turnkey__desc">без рукавов</div>
+			</div>
+		</div>
 	</div>
 </section>
 
