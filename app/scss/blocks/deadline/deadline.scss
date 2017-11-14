@@ -1,0 +1,24 @@
+.deadline {
+
+	&__text {
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
+
+	&__title {
+		font-family: 'OpenSans Bold';
+		font-size: 1.1rem;
+		text-transform: uppercase;
+
+		&_orange {
+			color: $orange;
+			margin-right: 40px;
+		}
+
+		&_green {
+			color: $green;
+			margin-left: 40px;
+		}
+	}
+}

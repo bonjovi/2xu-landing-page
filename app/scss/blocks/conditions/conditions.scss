@@ -3,7 +3,7 @@
 
 	&__icons {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	&__icon {
@@ -15,7 +15,7 @@
 		color: $black;
 		font-family: 'Din Regular';
 		text-transform: uppercase;
-		line-height: 1rem;
+		line-height: 1.3rem;
 	}
 
 }

@@ -408,6 +408,12 @@ template {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Din Cond Bold';
+  src: url("../fonts/DINPro-CondBold_0.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Din Bold';
   src: url("../fonts/DINProBold.woff") format("woff");
   font-weight: normal;
@@ -430,6 +436,36 @@ template {
   src: url("../fonts/DINProBold.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+.conditions {
+  padding: 40px 0; }
+  .conditions__icons {
+    display: flex;
+    justify-content: space-between; }
+  .conditions__icon {
+    text-align: center; }
+  .conditions__title {
+    margin-top: 10px;
+    color: #000000;
+    font-family: 'Din Regular';
+    text-transform: uppercase;
+    line-height: 1.3rem; }
+
+.deadline__text {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.deadline__title {
+  font-family: 'OpenSans Bold';
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+  .deadline__title_orange {
+    color: #eca847;
+    margin-right: 40px; }
+  .deadline__title_green {
+    color: #4fce91;
+    margin-left: 40px; }
 
 .header {
   width: 100%;
@@ -474,19 +510,123 @@ template {
     font-family: 'OpenSans Regular';
     font-size: 1.1rem; }
 
-.conditions {
-  padding: 40px 0; }
-  .conditions__icons {
-    display: flex;
-    justify-content: space-around; }
-  .conditions__icon {
-    text-align: center; }
-  .conditions__title {
-    margin-top: 10px;
-    color: #000000;
-    font-family: 'Din Regular';
-    text-transform: uppercase;
-    line-height: 1rem; }
+.heading {
+  color: #000000;
+  font-family: 'Din Cond Bold';
+  text-transform: uppercase;
+  font-size: 36px; }
+
+.models__star {
+  margin-top: -10px; }
+
+.models__explanation {
+  color: #494949;
+  font-family: 'Din Regular';
+  font-size: 14px; }
+
+.models__tabs {
+  display: flex;
+  list-style: none;
+  padding: 0; }
+
+.models__tab {
+  font-family: 'Din Cond Medium';
+  font-size: 30px;
+  text-align: center;
+  padding: 35px 45px;
+  background-color: #282828;
+  color: #ffffff;
+  cursor: pointer; }
+  .models__tab:hover, .models__tab_active {
+    background-color: transparent;
+    color: #000000; }
+
+.models__tabdesc {
+  font-size: 18px;
+  display: block; }
+
+.models__content {
+  display: flex; }
+
+.models__left {
+  width: 45%; }
+
+.models__sku {
+  color: #494949;
+  font-family: 'Din Regular';
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.models__image {
+  margin-bottom: 40px;
+  width: 100%; }
+
+.models__download {
+  color: #494949;
+  font-family: 'Din Regular';
+  font-size: 14px;
+  padding: 15px 70px;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 2px solid #cecece;
+  text-transform: uppercase;
+  width: fit-content;
+  text-decoration: none; }
+  .models__download:hover {
+    background-color: #cecece;
+    color: #000000; }
+
+.models__right {
+  width: 55%;
+  margin-left: 40px; }
+
+.models__text {
+  font-family: 'OpenSans Regular';
+  font-size: 1rem;
+  color: #494949; }
+
+.models__list {
+  list-style-type: none;
+  line-height: 2rem; }
+
+.models__item {
+  font-family: 'OpenSans Regular';
+  font-size: 1rem;
+  color: #494949; }
+
+.models__colors {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0; }
+
+.models__color {
+  text-align: center; }
+
+.models__circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-bottom: 10px; }
+  .models__circle_black {
+    background-color: #000000; }
+  .models__circle_grey {
+    background-color: #494949; }
+  .models__circle_white {
+    background-color: #ffffff;
+    border: 1px solid #494949;
+    box-sizing: border-box; }
+  .models__circle_red {
+    background-color: #ff1c1c; }
+  .models__circle_lightblue {
+    background-color: #3a5896; }
+  .models__circle_darkblue {
+    background-color: #042260; }
+
+.models__colorname {
+  font-family: 'OpenSans Regular';
+  font-size: 1rem;
+  color: #494949; }
 
 .wrapper {
   width: 1200px;
