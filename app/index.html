@@ -289,13 +289,21 @@
 
 <section class="guarantees">
 	<div class="wrapper">
-		
+		<h2 class="heading">Гарантии</h2>
+		<div class="guarantees__smalltext guarantees__smalltext_first">Гарантия на изделие</div>
+		<div class="guarantees__bigtext guarantees__bigtext_first">30 дней</div>
+		<div class="guarantees__smalltext guarantees__smalltext_second">со дня доставки</div>
+
+		<div class="guarantees__smalltext guarantees__smalltext_third">гарантия на швы</div>
+		<div class="guarantees__bigtext guarantees__bigtext_second">6 месяцев</div>
+		<div class="guarantees__smalltext guarantees__smalltext_fourth"> со дня доставки</div>
 	</div>
 </section>
 
 <section class="special">
 	<div class="wrapper">
-		
+		<img class="special__image" src="img/special.png" alt="">
+		<p class="special__text"><strong>Специальные условия</strong> для спортивных клубов и команд</p>
 	</div>
 </section>
 
@@ -307,7 +315,22 @@
 
 <section class="howtomake">
 	<div class="wrapper">
-		
+		<h2 class="heading">Как сделать заказ?</h2>
+		<div class="howtomake__content">
+			<div class="howtomake__icon">
+				<img src="img/athletes-icon.jpg" alt="">
+			</div>
+			<ul class="howtomake__list">
+				<li class="howtomake__item">Выбрать модель и определить размеры </li>
+				<li class="howtomake__item">Описать дизайн (прикрепить рисунок от руки, создать рисунок на предложенном чертеже, описать словами, 
+приложить пример понравившейся модели, приложить логотипы в кривых) </li>
+				<li class="howtomake__item">Отправить заполненную форму</li>
+				<li class="howtomake__item">Мы свяжемся с вами и обговорим детали</li>
+				<li class="howtomake__item">Оплатить 50% от общей стоимости</li>
+				<li class="howtomake__item">Cогласовать дизайн (правки до 3 раз входят в базовую стоимость)</li>
+				<li class="howtomake__item">Получить заказ, обрадоваться новой форме и оплатить оставшиеся 50%</li>
+			</ul>
+		</div>
 	</div>
 </section>
 
@@ -330,7 +353,23 @@
 
 <section class="feedback">
 	<div class="wrapper">
-		
+		<h2 class="heading heading_lowercase">Интересно, хочу заказать, есть вопросы, свяжитесь со мной!</h2>
+		<form action="#" class="feedback__form">
+			<div class="feedback__row">
+				<input type="text" class="feedback__input" placeholder="Имя">
+				<input type="text" class="feedback__input" placeholder="Электронный адрес">
+				<input type="text" class="feedback__input" placeholder="Телефон">
+			</div>
+			<textarea name="" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Комментарии"></textarea>
+			<div class="feedback__row">
+				<div class="feedback__fileattach">
+					<div class="feedback__masktext">Прикрпепить</div>
+					<div id="feedback__attachedfilename"></div>
+					<input type="file" name="upload" id="feedback__inputfile" onchange="getName(this.value);" />
+				</div>
+				<input type="submit" class="feedback__submit" placeholder="Отправить">
+			</div>
+		</form>
 	</div>
 </section>
 

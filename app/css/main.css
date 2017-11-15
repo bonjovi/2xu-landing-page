@@ -674,6 +674,12 @@ textarea:-ms-input-placeholder {
   font-size: 1rem;
   color: #ffffff; }
 
+.athletes {
+  width: 100%;
+  height: 943px;
+  background: transparent url("../../app/img/athletes.jpg") 0 center no-repeat;
+  background-size: cover; }
+
 .conditions {
   padding: 99px 0 122px 0; }
   .conditions__icons {
@@ -806,6 +812,43 @@ textarea:-ms-input-placeholder {
   height: 30px;
   z-index: 20; }
 
+.guarantees {
+  width: 100%;
+  height: 740px;
+  background: transparent url("../../app/img/guarantees_bg.jpg") 0 center no-repeat;
+  background-size: cover;
+  padding-top: 40px; }
+  .guarantees__smalltext {
+    font-family: 'Din Regular';
+    font-size: 1.1rem;
+    color: #282828;
+    text-transform: uppercase;
+    position: absolute; }
+    .guarantees__smalltext_first {
+      margin-top: 93px;
+      margin-left: 123px; }
+    .guarantees__smalltext_second {
+      margin-top: 178px;
+      margin-left: 264px; }
+    .guarantees__smalltext_third {
+      margin-top: 236px;
+      margin-left: 868px; }
+    .guarantees__smalltext_fourth {
+      margin-top: 322px;
+      margin-left: 868px; }
+  .guarantees__bigtext {
+    font-family: 'Din Cond Bold';
+    font-size: 4.5rem;
+    color: #282828;
+    text-transform: uppercase;
+    position: absolute; }
+    .guarantees__bigtext_first {
+      margin-top: 103px;
+      margin-left: 150px; }
+    .guarantees__bigtext_second {
+      margin-top: 246px;
+      margin-left: 822px; }
+
 .header {
   width: 100%;
   height: 700px;
@@ -863,8 +906,28 @@ textarea:-ms-input-placeholder {
     text-transform: inherit;
     color: #ffffff; }
 
+.howtomake {
+  padding: 60px 0 90px 0; }
+  .howtomake__content {
+    display: flex;
+    margin-top: 40px; }
+  .howtomake__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 25px; }
+  .howtomake__item {
+    font-family: 'Din Regular';
+    font-size: 1.1rem;
+    color: #494949;
+    margin-bottom: 56px; }
+
+.lookbook {
+  overflow: hidden;
+  padding: 90px 0; }
+
 .models {
-  padding: 40px 0 40px 0;
+  padding: 62px 0 40px 0;
   background-color: #f7f7f7; }
   .models__star {
     margin-top: -10px; }
@@ -1013,10 +1076,6 @@ textarea:-ms-input-placeholder {
     text-align: center;
     border: 1px solid #cecece; }
 
-.lookbook {
-  overflow: hidden;
-  padding: 90px 0; }
-
 .owl-carousel {
   position: relative;
   margin-top: 52px; }
@@ -1052,9 +1111,17 @@ textarea:-ms-input-placeholder {
       margin-top: -40px;
       float: right; }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto; }
+.special {
+  padding: 76px 0 54px 0; }
+  .special__image {
+    display: block;
+    margin: 0 auto 50px auto; }
+  .special__text {
+    font-family: 'Din Regular';
+    font-size: 1.4rem;
+    color: #282828;
+    text-transform: uppercase;
+    text-align: center; }
 
 .turnkey {
   padding: 32px 0 56px 0;
@@ -1088,3 +1155,7 @@ textarea:-ms-input-placeholder {
     margin-left: 100px;
     margin-right: 115px;
     margin-top: -50px; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }

@@ -1,0 +1,22 @@
+.howtomake {
+	padding:60px 0 90px 0;
+
+	&__content {
+		display: flex;
+		margin-top: 40px;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-top: 25px;
+	}
+
+	&__item {
+		font-family: 'Din Regular'; 
+		font-size: 1.1rem;
+	    color: $grey;
+	    margin-bottom: 56px;
+	}
+}

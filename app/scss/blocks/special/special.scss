@@ -1,0 +1,16 @@
+.special {
+	padding: 76px 0 54px 0;
+
+	&__image {
+		display: block;
+		margin: 0 auto 50px auto;
+	}
+
+	&__text {
+		font-family: 'Din Regular'; 
+		font-size: 1.4rem;
+	    color: $darkgrey;
+	    text-transform: uppercase;
+	    text-align: center;
+	}
+}
