@@ -680,6 +680,51 @@ textarea:-ms-input-placeholder {
   background: transparent url("../../app/img/athletes.jpg") 0 center no-repeat;
   background-size: cover; }
 
+.bonuses {
+  border-top: 1px solid #f5f2f0;
+  padding: 60px 0 138px 0; }
+  .bonuses__content {
+    display: flex; }
+  .bonuses__text {
+    padding-left: 276px;
+    padding-top: 97px; }
+  .bonuses__firstheading {
+    font-family: 'Din Cond Bold';
+    color: #282828;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: normal; }
+  .bonuses__secondheading {
+    font-family: 'Din Cond Medium';
+    color: #fb4e5a;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: normal; }
+    .bonuses__secondheading strong {
+      font-family: 'Din Cond Bold'; }
+  .bonuses__basket {
+    width: 256px;
+    height: 222px;
+    background: transparent url("../../app/img/basket.png") 20px center no-repeat;
+    padding-left: 30px; }
+  .bonuses__remaining {
+    display: flex;
+    margin-top: 120px;
+    margin-left: 71px;
+    align-items: center; }
+  .bonuses__remainingtext {
+    font-family: 'Din Regular';
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: uppercase; }
+  .bonuses__remainingnumber {
+    font-family: 'Din Cond Bold';
+    color: #ffffff;
+    font-size: 4rem;
+    padding-left: 10px; }
+
 .conditions {
   padding: 99px 0 122px 0; }
   .conditions__icons {
@@ -906,22 +951,6 @@ textarea:-ms-input-placeholder {
     text-transform: inherit;
     color: #ffffff; }
 
-.howtomake {
-  padding: 60px 0 90px 0; }
-  .howtomake__content {
-    display: flex;
-    margin-top: 40px; }
-  .howtomake__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-top: 25px; }
-  .howtomake__item {
-    font-family: 'Din Regular';
-    font-size: 1.1rem;
-    color: #494949;
-    margin-bottom: 56px; }
-
 .lookbook {
   overflow: hidden;
   padding: 90px 0; }
@@ -1111,6 +1140,48 @@ textarea:-ms-input-placeholder {
       margin-top: -40px;
       float: right; }
 
+.reviews {
+  padding: 40px 0 80px 0;
+  background-color: #282828; }
+  .reviews__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px; }
+  .reviews__review {
+    width: 33.3333%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .reviews__reviewer {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%; }
+  .reviews__avatar img {
+    clip: rect(10px, 290px, 190px, 10px); }
+  .reviews__name {
+    font-family: 'Din Cond Medium';
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-left: 20px; }
+  .reviews__text {
+    font-family: 'OpenSans Regular';
+    font-size: 1rem;
+    color: #b1b1b1; }
+  .reviews__athlet {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    .reviews__athlet img {
+      width: 100%; }
+    .reviews__athlet_active {
+      visibility: hidden; }
+
 .special {
   padding: 76px 0 54px 0; }
   .special__image {
@@ -1122,6 +1193,10 @@ textarea:-ms-input-placeholder {
     color: #282828;
     text-transform: uppercase;
     text-align: center; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
 
 .turnkey {
   padding: 32px 0 56px 0;
@@ -1156,6 +1231,18 @@ textarea:-ms-input-placeholder {
     margin-right: 115px;
     margin-top: -50px; }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto; }
+.howtomake {
+  padding: 60px 0 90px 0; }
+  .howtomake__content {
+    display: flex;
+    margin-top: 40px; }
+  .howtomake__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 25px; }
+  .howtomake__item {
+    font-family: 'Din Regular';
+    font-size: 1.1rem;
+    color: #494949;
+    margin-bottom: 56px; }

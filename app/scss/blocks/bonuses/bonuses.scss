@@ -1,0 +1,65 @@
+.bonuses {
+	border-top:1px solid #f5f2f0;
+	padding: 60px 0 138px 0; 
+
+	&__content {
+		display: flex;
+	}
+
+	&__text {
+		padding-left: 276px;
+    	padding-top: 97px;
+	}
+
+	&__firstheading {
+		font-family: 'Din Cond Bold';
+		color: $darkgrey;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		margin: 0;
+		font-weight: normal;
+	}
+
+	&__secondheading {
+		font-family: 'Din Cond Medium';
+		color: $pink;
+		font-size: 2rem;
+		text-transform: uppercase;
+		margin: 0;
+		font-weight: normal;
+
+		strong {
+			font-family: 'Din Cond Bold';
+		}
+	}
+
+	&__basket {
+		width: 256px;
+		height: 222px;
+		background: transparent url('../../app/img/basket.png') 20px center no-repeat;
+		padding-left: 30px;
+	}
+
+	&__remaining {
+		display: flex;
+	    margin-top: 120px;
+	    margin-left: 71px;
+	    align-items: center;
+	}
+
+	&__remainingtext {
+		font-family: 'Din Regular';
+		color: $white;
+		font-size: 0.9rem;
+		text-transform: uppercase;
+	}
+
+	&__remainingnumber {
+		font-family: 'Din Cond Bold';
+		color: $white;
+		font-size: 4rem;
+		padding-left: 10px;
+	}
+
+
+}

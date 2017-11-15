@@ -6,6 +6,11 @@ $(function() {
 		nav: true
 	});
 
+    $('.reviews__review').hover(function() {
+        $('.reviews__review:first-child').children('.reviews__athlet').removeClass('reviews__athlet_active');
+        $(this).children('.reviews__athlet').toggleClass('reviews__athlet_active');
+    });
+
 	
 });
 
