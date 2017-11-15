@@ -238,8 +238,12 @@
 			</div>
 			<textarea name="" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Комментарии"></textarea>
 			<div class="feedback__row">
-				<input type="file" class="feedback__input" placeholder="Прикрепить файл">
-				<input type="submit" class="feedback__input" placeholder="Отправить">
+				<div class="feedback__fileattach">
+					<div class="feedback__masktext">Прикрпепить</div>
+					<div id="feedback__attachedfilename"></div>
+					<input type="file" name="upload" id="feedback__inputfile" onchange="getName(this.value);" />
+				</div>
+				<input type="submit" class="feedback__submit" placeholder="Отправить">
 			</div>
 		</form>
 	</div>

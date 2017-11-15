@@ -33,5 +33,91 @@
 		outline-color: $darkgold;
 		height: 64px;
     	box-sizing: border-box;
+    	margin-bottom: 30px;
 	}
+
+	&__submit {
+		font-family: 'Din Bold';
+		color: $darkgrey;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1rem;
+		padding: 15px 70px;
+		border:none;
+		cursor: pointer;
+		background-color: $white;
+		box-sizing:border-box;
+
+		&:hover {
+			color: $white;
+			background-color: transparent;
+			outline: 1px solid $white;
+    		outline-offset: -1px;
+		}
+	}
+
+
+
+	&__fileattach { 
+	    background-color: transparent;
+	    cursor: pointer;
+	    height: 100%;
+	    overflow: hidden;
+	    padding: 0;
+	    position: relative;
+	    text-align: left;
+	    vertical-align: middle;
+	    width: 100%;
+	    display: flex;
+	    justify-content: flex-start;
+
+	}
+
+	&__masktext {
+		font-family: 'OpenSans Regular'; 
+		font-size: 1rem;
+	    color: $blue;
+	    float: right;
+	    font-size: 16px;
+	    height: 20px;
+	    line-height: 20px;
+	    overflow: hidden;
+	    padding: 2px 6px 2px 0;
+	    text-align: left;
+	    vertical-align: middle;
+	    width: 120px;
+	    
+	}
+
+	
+}
+
+
+#feedback__attachedfilename { 
+	font-family: 'OpenSans Regular'; 
+	font-size: 1rem;
+    color: $white;
+    background-color: transparent;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 2px;
+    text-align: left;
+    vertical-align: middle;
+    width:90%;
+}
+
+#feedback__inputfile {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0; 
+    font-size: 150px; 
+    height: 30px; 
+    z-index:20;
+    
 }
