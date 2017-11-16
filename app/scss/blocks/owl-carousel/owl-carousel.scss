@@ -2,10 +2,9 @@
 	position: relative;
 	margin-top: 52px;
 
-	.owl-item {
-		img {
-			width: fit-content;
-		}
+
+	.owl-nav {
+		display: none;
 	}
 
 	.owl-nav.disabled {

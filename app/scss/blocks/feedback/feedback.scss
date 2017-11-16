@@ -19,9 +19,14 @@
 		margin-right: 30px;
 		outline-color: $darkgold;
 		width: 100%;
+		color:$white;
 
 		&:last-child {
 			margin-right: 0;
+		}
+
+		&.notValid {
+			border:1px solid red;
 		}
 	}
 
@@ -34,6 +39,11 @@
 		height: 64px;
     	box-sizing: border-box;
     	margin-bottom: 30px;
+    	color:$white;
+
+    	&.notValid {
+			border:1px solid red;
+		}
 	}
 
 	&__submit {
@@ -86,6 +96,13 @@
 	    text-align: left;
 	    vertical-align: middle;
 	    min-width: 130px;
+	    
+	}
+
+	&__result {
+		font-family: 'OpenSans Regular'; 
+		font-size: 1rem;
+	    color: $white;
 	    
 	}
 

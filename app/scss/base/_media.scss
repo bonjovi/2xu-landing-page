@@ -4,6 +4,12 @@
 	}
 }
 
+@media only screen and (max-width: 1400px) {
+	.header {
+		background-position: -300px center;
+	}
+}
+
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {
@@ -238,9 +244,7 @@
 		}
 	}
 
-	.owl-nav {
-		display: none;
-	}
+	
 
 	.owl-carousel .owl-item img {
 	    width: 100%;
