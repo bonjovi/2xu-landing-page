@@ -210,7 +210,7 @@
 	    padding: 2px 6px 2px 0;
 	    text-align: left;
 	    vertical-align: middle;
-	    width: 120px;
+	    min-width: 130px;
 	    
 	}
 
@@ -299,45 +299,6 @@
 	    }
 	}
 }
-.howtomake {
-	padding:60px 0 90px 0;
-
-	&__content {
-		display: flex;
-		margin-top: 40px;
-	}
-
-	&__list {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		margin-top: 25px;
-	}
-
-	&__item {
-		font-family: 'Din Regular'; 
-		font-size: 1.1rem;
-	    color: $grey;
-	    margin-bottom: 56px;
-	}
-}
-.heading {
-	color: $black;
-	font-family: 'Din Cond Bold';
-	text-transform: uppercase;
-	font-size: 36px;
-	padding: 0;
-    margin: 0;
-
-	&_white {
-		color: $white;
-	}
-
-	&_lowercase {
-		text-transform: inherit;
-		color: $white;
-	}
-}
 .header {
 	width: 100%;   
 	height: 700px;
@@ -404,9 +365,44 @@
 
 	
 }
-.lookbook {
-	overflow: hidden;
-	padding: 90px 0;
+.heading {
+	color: $black;
+	font-family: 'Din Cond Bold';
+	text-transform: uppercase;
+	font-size: 36px;
+	padding: 0;
+    margin: 0;
+
+	&_white {
+		color: $white;
+	}
+
+	&_lowercase {
+		text-transform: inherit;
+		color: $white;
+	}
+}
+.howtomake {
+	padding:60px 0 90px 0;
+
+	&__content {
+		display: flex;
+		margin-top: 40px;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-top: 25px;
+	}
+
+	&__item {
+		font-family: 'Din Regular'; 
+		font-size: 1.1rem;
+	    color: $grey;
+	    margin-bottom: 56px;
+	}
 }
 .models {
 	padding: 62px 0 40px 0;
@@ -444,7 +440,16 @@
 		&:hover, &_active {
 			background-color: transparent;
 			color: $black;
+
+			.models__mobileicon {
+				opacity:1;
+			}
 		}
+	}
+
+	&__mobileicon {
+		opacity:0.5;
+		display: none;
 	}
 
 	&__tabdesc {
@@ -453,11 +458,39 @@
 	}
 
 	&__content {
+		display: none;
+
+		&:first-child {
+			display: flex;
+		}
+	}
+
+	&__content.first {
 		display: flex;
 	}
 
 	&__left {
 		width: 57%;
+	}
+
+	&__title {
+		display: none;
+	}
+
+	&__titlefirst {
+		font-family: 'Din Cond Medium';
+		font-size: 30px;
+		text-align: center;
+		color: $darkgrey;
+		width: 100%;
+	}
+
+	&__titlesecond {
+		font-family: 'Din Cond Medium';
+		font-size: 18px;
+		text-align: center;
+		color: $darkgrey;
+		width: 100%;
 	}
 
 	&__sku {
@@ -700,6 +733,9 @@
 	}
 
 	&__avatar {
+		border-radius: 50%;
+    	overflow: hidden;
+
 		img {
 			clip: rect(10px, 290px, 190px, 10px);
 		}
@@ -794,4 +830,8 @@
 .wrapper {
 	width: 1200px;
 	margin: 0 auto;
+}
+.lookbook {
+	overflow: hidden;
+	padding: 90px 0;
 }

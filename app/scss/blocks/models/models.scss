@@ -34,7 +34,16 @@
 		&:hover, &_active {
 			background-color: transparent;
 			color: $black;
+
+			.models__mobileicon {
+				opacity:1;
+			}
 		}
+	}
+
+	&__mobileicon {
+		opacity:0.5;
+		display: none;
 	}
 
 	&__tabdesc {
@@ -43,11 +52,39 @@
 	}
 
 	&__content {
+		display: none;
+
+		&:first-child {
+			display: flex;
+		}
+	}
+
+	&__content.first {
 		display: flex;
 	}
 
 	&__left {
 		width: 57%;
+	}
+
+	&__title {
+		display: none;
+	}
+
+	&__titlefirst {
+		font-family: 'Din Cond Medium';
+		font-size: 30px;
+		text-align: center;
+		color: $darkgrey;
+		width: 100%;
+	}
+
+	&__titlesecond {
+		font-family: 'Din Cond Medium';
+		font-size: 18px;
+		text-align: center;
+		color: $darkgrey;
+		width: 100%;
 	}
 
 	&__sku {

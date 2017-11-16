@@ -29,14 +29,381 @@
 	.header {
 		background-image:none;
 		background-color:$darkgrey;
+		height: auto;
 
 		&__slogan, &__question, &__item {
 			color:$white;
+			font-size: 1rem;
+		}
+
+		&__text {
+			margin-left: 0;
+			margin: 0 auto;
+    		width: 70%;
+		}
+
+		&__question {
+			font-size: 1rem;
+			margin-bottom: 10px;
+	    	padding-top: 0;
+		}
+
+		&__slogan {
+			line-height: 1.5rem;
+
+			&_first {
+				font-size: 1rem;
+			}
+
+			&_second {
+				font-size: 1rem;
+				letter-spacing: 0rem;
+			}
+
+			&_third {
+				font-size: 1rem;
+				letter-spacing: 0rem;
+			}
+
+			&_fourth {
+				font-size: 1.6rem;
+				line-height: 1.5rem;
+	    		letter-spacing: 0rem;
+			}
+
+			&_fifth {
+				font-size: 1rem;
+			}
+		}
+
+		&__list {
+			list-style-image: url('../../app/img/check-white.png');
+			padding: 0 0 0 30px;
+		}
+
+		&__item {
+			padding-left: 15px;
+			margin-bottom: 20px;
+			font-size: 0.9rem;
 		}
 	}
 
 	.wrapper {
 		width: 100%;
+		padding: 20px;
+    	box-sizing: border-box;
 	}
+
+
+
+
+	.conditions {
+		padding: 60px 0 0 0;
+
+		&__icons {
+			flex-wrap: wrap;
+		}
+
+		&__icon {
+			width: 80%;
+			margin: 0 auto 40px auto;
+			display: flex;
+			align-items: center;
+		}
+
+		&__title {
+			margin-top: 0;
+			padding-left:0;
+			text-align: left;
+		}
+
+		&__image {
+			justify-content: flex-start;
+			min-width:100px;
+		}
+	}
+
+	.deadline {
+		&__text {
+			flex-wrap: wrap;
+			justify-content: normal;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+
+		&__title {
+			font-size: 0.8rem;
+
+			&_green {
+				width: 100%;
+				text-align: right;
+				margin-right: 40px;
+			}
+		}
+
+		&__image {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.models {
+		&__title {
+			display: block;
+		}
+
+		&__mobileicon {
+			display: block;
+		}
+
+		&__tabname, &__tabdesc {
+			display: none;
+		}
+
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__left, &__right, &__image {
+			width: 100%;
+		}
+
+		&__download {
+			display: block;
+    		width: 100%;
+    		padding:15px 0;
+    		box-sizing: border-box;
+		}
+
+		&__right {
+			margin-left: 0;
+		}
+
+		&__price {
+			margin: 0;
+			width: 100%;
+			padding: 20px 0 20px 0;
+			justify-content: center;
+		}
+
+		&__colors {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		&__color {
+			margin-bottom: 20px;
+		}
+
+		&__circle {
+	    	width: 30px;
+	    	height: 30px;
+	    }
+
+	    &__tab {
+	    	padding: 0;
+	    	background-color: transparent;
+	    }
+
+	    &__colorname {
+	    	font-size: 0.9rem;
+	    }
+
+		tr {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+		}
+
+		&__td, &__th {
+			display: block;
+			width: 15.5%;
+			padding-left:0;
+			padding-right: 0;
+			margin-bottom: 0;
+			border:0;
+		}
+
+		&__th:first-child,
+		&__td:first-child {
+			text-align: center;
+			background: #efefef;
+			width: 100%;
+		}
+
+		&__th:first-child {
+			
+		}
+	}
+
+	.owl-nav {
+		display: none;
+	}
+
+	.owl-carousel .owl-item img {
+	    width: 100%;
+	}
+
+	.lookbook {
+		padding:20px 0;
+	}
+
+	.turnkey {
+		padding-bottom: 0;
+
+		&__figures {
+			flex-wrap:wrap;
+		}
+
+		&__separator {
+			display: none;
+		}
+
+		&__price {
+			margin-bottom: 40px;
+		}
+	}
+
+	.feedback {
+
+		&__row {
+			flex-wrap:wrap;
+			margin-bottom: 0;
+		}
+
+		&__input {
+			margin: 0;
+			margin-bottom: 30px;
+		}
+
+		&__submit {
+			width: 100%;
+    		margin-top: 30px;
+		}
+
+	}
+	
+	.conditions {
+		padding-top: 30px;
+
+		&__icons {
+			margin-top: 30px;
+		}
+	}
+
+	.guarantees {
+	    width: 100%;
+	    height: 720px;
+	    background-size: 360% 75%;
+	    background-position: 54% 24%;
+	    margin-bottom: -100px;
+
+	    &__smalltext, &__bigtext {
+	    	position: relative;
+	    	text-align: right;
+	    }
+
+	    &__smalltext_first {
+		    margin-top: 60px;
+		    margin-left: 0;
+		    font-size: 0.8rem;
+		}
+
+		&__bigtext_first {
+		    margin-top: 0;
+		    margin-left: 0;
+		    font-size: 2rem;
+		}
+
+		&__smalltext_second {
+		    margin-top: 0;
+		    margin-left: 0;
+		    font-size: 0.8rem;
+		}
+
+		&__smalltext_third {
+		    margin-top: 40px;
+		    font-size: 0.8rem;
+		    margin-left: 0;
+		}
+
+		&__bigtext_second {
+		    margin-top: 0;
+		    margin-left: 0;
+		    font-size: 2rem;
+		}
+
+		&__smalltext_fourth {
+		    margin-top: 0;
+		    margin-left: 0;
+		    font-size: 0.8rem;
+		}
+
+	}
+
+	.special {
+		padding: 0;
+
+		&__image {
+		    width: 100%;
+		}
+	}
+
+	.howtomake {
+		padding-bottom: 0;
+
+		&__icon {
+			display: none;
+		}
+
+		&__list {
+			list-style: disc;
+			margin-left: 20px;
+		}
+	}
+
+	.bonuses {
+		padding: 0;
+
+		&__content {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+		}
+
+		&__text {
+			padding: 0;
+			text-align: center;
+		}
+
+		&__basket {
+			width: 100%;
+		    padding: 0;
+		    text-align: center;
+		    background-position: center center;
+		    margin-bottom: 20px;
+		}
+
+		&__remaining {
+			margin-left: 0;
+    		justify-content: center;
+		}
+
+		&__secondheading {
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.athletes {
+	    height: auto;
+	    background-size: cover;
+	    background-position: top center;
+	    min-height: 230px;
+	}
+
+
 
 }
