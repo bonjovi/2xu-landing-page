@@ -894,6 +894,35 @@ textarea:-ms-input-placeholder {
       margin-top: 246px;
       margin-left: 822px; }
 
+.howtomake {
+  padding: 60px 0 90px 0; }
+  .howtomake__content {
+    display: flex;
+    margin-top: 40px; }
+  .howtomake__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 25px; }
+  .howtomake__item {
+    font-family: 'Din Regular';
+    font-size: 1.1rem;
+    color: #494949;
+    margin-bottom: 56px; }
+
+.heading {
+  color: #000000;
+  font-family: 'Din Cond Bold';
+  text-transform: uppercase;
+  font-size: 36px;
+  padding: 0;
+  margin: 0; }
+  .heading_white {
+    color: #ffffff; }
+  .heading_lowercase {
+    text-transform: inherit;
+    color: #ffffff; }
+
 .header {
   width: 100%;
   height: 700px;
@@ -937,19 +966,6 @@ textarea:-ms-input-placeholder {
     margin-bottom: 28px;
     font-family: 'OpenSans Regular';
     font-size: 1.1rem; }
-
-.heading {
-  color: #000000;
-  font-family: 'Din Cond Bold';
-  text-transform: uppercase;
-  font-size: 36px;
-  padding: 0;
-  margin: 0; }
-  .heading_white {
-    color: #ffffff; }
-  .heading_lowercase {
-    text-transform: inherit;
-    color: #ffffff; }
 
 .lookbook {
   overflow: hidden;
@@ -1194,10 +1210,6 @@ textarea:-ms-input-placeholder {
     text-transform: uppercase;
     text-align: center; }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto; }
-
 .turnkey {
   padding: 32px 0 56px 0;
   background-color: #907d4e; }
@@ -1231,18 +1243,23 @@ textarea:-ms-input-placeholder {
     margin-right: 115px;
     margin-top: -50px; }
 
-.howtomake {
-  padding: 60px 0 90px 0; }
-  .howtomake__content {
-    display: flex;
-    margin-top: 40px; }
-  .howtomake__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-top: 25px; }
-  .howtomake__item {
-    font-family: 'Din Regular';
-    font-size: 1.1rem;
-    color: #494949;
-    margin-bottom: 56px; }
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 1840px) {
+  .header {
+    background-position: -200px center; } }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header {
+    background-image: none;
+    background-color: #282828; }
+    .header__slogan, .header__question, .header__item {
+      color: #ffffff; }
+  .wrapper {
+    width: 100%; } }

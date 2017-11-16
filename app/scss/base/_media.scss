@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1840px) {
+	.header {
+		background-position: -200px center;
+	}
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+	
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+
+	.header {
+		background-image:none;
+		background-color:$darkgrey;
+
+		&__slogan, &__question, &__item {
+			color:$white;
+		}
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+
+}
