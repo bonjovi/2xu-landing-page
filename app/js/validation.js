@@ -32,9 +32,11 @@ $(document).ready(function() {
 		if(!$(nameLngth).hasClass("notValid")) {
 			
 			jQuery.ajax({
-					url:     "../server.php", 
+					url:     "server.php", 
 					type:     "POST", 
-					dataType: "html", 
+					processData: false,
+			        contentType: false,
+			        cache:false,
 					data: jQuery(form).serialize(),
 					success: function(response) {
 					$('<div class="feedback__result"></div>').insertAfter(form).text(response);
