@@ -32,7 +32,7 @@ $(document).ready(function() {
 		if(!$(nameLngth).hasClass("notValid")) {
 			
 			jQuery.ajax({
-					url:     "/lp/5s/server.php", 
+					url:     "../server.php", 
 					type:     "POST", 
 					dataType: "html", 
 					data: jQuery(form).serialize(),
