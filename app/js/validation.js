@@ -34,9 +34,7 @@ $(document).ready(function() {
 			jQuery.ajax({
 					url:     "server.php", 
 					type:     "POST", 
-					processData: false,
-			        contentType: false,
-			        cache:false,
+					dataType: "html", 
 					data: jQuery(form).serialize(),
 					success: function(response) {
 					$('<div class="feedback__result"></div>').insertAfter(form).text(response);

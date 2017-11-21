@@ -244,10 +244,14 @@
 		}
 	}
 
-	
+	.owl-carousel {
+		.owl-nav {
+			display: none;
+		}
 
-	.owl-carousel .owl-item img {
-	    width: 100%;
+		.owl-item img {
+		    width: 100%;
+		}
 	}
 
 	.lookbook {
@@ -407,6 +411,16 @@
 	    background-position: top center;
 	    min-height: 230px;
 	    display: none;
+	}
+
+	.reviews {
+		&__athlet {
+			display: none;
+		}
+
+		&__review {
+			width: 100%;
+		}
 	}
 
 

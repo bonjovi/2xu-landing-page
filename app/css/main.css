@@ -744,6 +744,24 @@ textarea:-ms-input-placeholder {
     text-transform: uppercase;
     line-height: 1.3rem; }
 
+.deadline {
+  padding: 0 0 40px 0; }
+  .deadline__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px; }
+  .deadline__title {
+    font-family: 'OpenSans Bold';
+    font-size: 1.1rem;
+    text-transform: uppercase; }
+    .deadline__title_orange {
+      color: #eca847;
+      margin-right: 40px; }
+    .deadline__title_green {
+      color: #4fce91;
+      margin-left: 40px; }
+
 .feedback {
   background-color: #282828;
   padding: 42px 0 44px 0; }
@@ -822,50 +840,30 @@ textarea:-ms-input-placeholder {
     font-family: 'OpenSans Regular';
     font-size: 1rem;
     color: #ffffff; }
-
-#feedback__attachedfilename {
-  font-family: 'OpenSans Regular';
-  font-size: 1rem;
-  color: #ffffff;
-  background-color: transparent;
-  float: left;
-  height: 22px;
-  line-height: 22px;
-  overflow: hidden;
-  padding: 2px;
-  text-align: left;
-  vertical-align: middle;
-  width: 90%; }
-
-#feedback__inputfile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -moz-opacity: 0;
-  filter: alpha(opacity=0);
-  opacity: 0;
-  font-size: 150px;
-  height: 30px;
-  z-index: 20; }
-
-.deadline {
-  padding: 0 0 40px 0; }
-  .deadline__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 14px; }
-  .deadline__title {
-    font-family: 'OpenSans Bold';
-    font-size: 1.1rem;
-    text-transform: uppercase; }
-    .deadline__title_orange {
-      color: #eca847;
-      margin-right: 40px; }
-    .deadline__title_green {
-      color: #4fce91;
-      margin-left: 40px; }
+  .feedback__attachedfilename {
+    font-family: 'OpenSans Regular';
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 2px;
+    text-align: left;
+    vertical-align: middle;
+    width: 90%; }
+  .feedback__inputfile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 150px;
+    height: 30px;
+    z-index: 20; }
 
 .guarantees {
   width: 100%;
@@ -960,6 +958,9 @@ textarea:-ms-input-placeholder {
   .heading_lowercase {
     text-transform: inherit;
     color: #ffffff; }
+  .heading_conditions {
+    margin-top: -45px;
+    margin-bottom: 80px; }
 
 .howtomake {
   padding: 60px 0 90px 0; }
@@ -1158,15 +1159,13 @@ textarea:-ms-input-placeholder {
   position: relative;
   margin-top: 52px; }
   .owl-carousel .owl-nav {
-    display: none; }
-  .owl-carousel .owl-nav.disabled {
     display: block;
     position: absolute;
     top: 0;
     width: 110%;
     margin-left: -5%;
     margin-top: 170px; }
-    .owl-carousel .owl-nav.disabled .owl-prev {
+    .owl-carousel .owl-nav .owl-prev {
       width: 40px;
       height: 40px;
       border: 3px solid #494949;
@@ -1176,7 +1175,9 @@ textarea:-ms-input-placeholder {
       border-bottom: none;
       border-right: none;
       top: 0; }
-    .owl-carousel .owl-nav.disabled .owl-next {
+      .owl-carousel .owl-nav .owl-prev:hover {
+        opacity: 0.7; }
+    .owl-carousel .owl-nav .owl-next {
       width: 40px;
       height: 40px;
       border: 3px solid #494949;
@@ -1188,6 +1189,8 @@ textarea:-ms-input-placeholder {
       top: 0;
       margin-top: -40px;
       float: right; }
+      .owl-carousel .owl-nav .owl-next:hover {
+        opacity: 0.7; }
 
 .reviews {
   padding: 40px 0 80px 0;
@@ -1228,7 +1231,9 @@ textarea:-ms-input-placeholder {
   .reviews__athlet {
     position: absolute;
     top: 0;
-    width: 100%; }
+    left: 0;
+    width: 100%;
+    z-index: 1; }
     .reviews__athlet img {
       width: 100%; }
     .reviews__athlet_active {
@@ -1418,6 +1423,8 @@ textarea:-ms-input-placeholder {
     text-align: center;
     background: #efefef;
     width: 100%; }
+  .owl-carousel .owl-nav {
+    display: none; }
   .owl-carousel .owl-item img {
     width: 100%; }
   .lookbook {
@@ -1511,4 +1518,8 @@ textarea:-ms-input-placeholder {
     background-size: cover;
     background-position: top center;
     min-height: 230px;
-    display: none; } }
+    display: none; }
+  .reviews__athlet {
+    display: none; }
+  .reviews__review {
+    width: 100%; } }

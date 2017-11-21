@@ -97,6 +97,32 @@
 	}
 
 }
+.deadline {
+	padding: 0 0 40px 0;
+
+	&__text {
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+    	margin-top: 14px;
+	}
+
+	&__title {
+		font-family: 'OpenSans Bold';
+		font-size: 1.1rem;
+		text-transform: uppercase;
+
+		&_orange {
+			color: $orange;
+			margin-right: 40px;
+		}
+
+		&_green {
+			color: $green;
+			margin-left: 40px;
+		}
+	}
+}
 .feedback {
 	background-color: $darkgrey;
 	padding: 42px 0 44px 0;
@@ -205,64 +231,39 @@
 	    
 	}
 
+	&__attachedfilename { 
+		font-family: 'OpenSans Regular'; 
+		font-size: 1rem;
+	    color: $white;
+	    background-color: transparent;
+	    float: left;
+	    height: 22px;
+	    line-height: 22px;
+	    overflow: hidden;
+	    padding: 2px;
+	    text-align: left;
+	    vertical-align: middle;
+	    width:90%;
+	}
+
+	&__inputfile {
+	    position:absolute; 
+	    top:0; 
+	    left:0; 
+	    width:100%; 
+	    -moz-opacity: 0; 
+	    filter: alpha(opacity=0); 
+	    opacity: 0; 
+	    font-size: 150px; 
+	    height: 30px; 
+	    z-index:20;
+	    
+	}
+
 	
 }
 
 
-#feedback__attachedfilename { 
-	font-family: 'OpenSans Regular'; 
-	font-size: 1rem;
-    color: $white;
-    background-color: transparent;
-    float: left;
-    height: 22px;
-    line-height: 22px;
-    overflow: hidden;
-    padding: 2px;
-    text-align: left;
-    vertical-align: middle;
-    width:90%;
-}
-
-#feedback__inputfile {
-    position:absolute; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    -moz-opacity: 0; 
-    filter: alpha(opacity=0); 
-    opacity: 0; 
-    font-size: 150px; 
-    height: 30px; 
-    z-index:20;
-    
-}
-.deadline {
-	padding: 0 0 40px 0;
-
-	&__text {
-		display: flex;
-		align-items: center;
-    	justify-content: center;
-    	margin-top: 14px;
-	}
-
-	&__title {
-		font-family: 'OpenSans Bold';
-		font-size: 1.1rem;
-		text-transform: uppercase;
-
-		&_orange {
-			color: $orange;
-			margin-right: 40px;
-		}
-
-		&_green {
-			color: $green;
-			margin-left: 40px;
-		}
-	}
-}
 .guarantees {
 	width: 100%;   
 	height: 740px;
@@ -397,6 +398,11 @@
 	&_lowercase {
 		text-transform: inherit;
 		color: $white;
+	}
+
+	&_conditions {
+		margin-top: -45px;
+    	margin-bottom: 80px;
 	}
 }
 .howtomake {
@@ -683,11 +689,9 @@
 	margin-top: 52px;
 
 
-	.owl-nav {
-		display: none;
-	}
+	
 
-	.owl-nav.disabled {
+	.owl-nav {
 		display: block;
 		position: absolute;
 		top: 0;
@@ -705,6 +709,10 @@
 			border-bottom: none;
 			border-right: none;
 			top: 0;
+
+			&:hover {
+				opacity: 0.7;
+			}
 		}
 
 		.owl-next {
@@ -719,6 +727,10 @@
 			top: 0;
 			margin-top: -40px;
 			float: right;
+
+			&:hover {
+				opacity: 0.7;
+			}
 		}
 	}
 }
@@ -777,7 +789,9 @@
 	&__athlet {
 		position: absolute;
 		top:0;
+		left:0;
 		width: 100%;
+		z-index: 1;
 
 		img {
 			width: 100%;			

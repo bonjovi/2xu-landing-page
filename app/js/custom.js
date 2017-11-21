@@ -4,6 +4,7 @@ $(function() {
 		margin: 30,
 		loop: true,
 		nav: true,
+        autoplay:true,
         responsive: {
             0: {
                 items: 1
@@ -46,21 +47,24 @@ $(function() {
         changedImage.attr('src', 'img/' + colorClass + '-' + picName);
     });
 
-    
+    $('.feedback__inputfile').on('change', function() {
+        
+        var str = $(this).val();
+        if(str.lastIndexOf('\\')) {
+            var i = str.lastIndexOf('\\')+1;
+        }
+        else {
+            var i = str.lastIndexOf('/')+1;
+        }                       
+        var filename = str.slice(i);            
+        
+        console.log(filename);
+        //console.log(uploaded);
+        $(this).prev('.feedback__attachedfilename').text(filename);
+    });
 
     
 
 	
 });
 
-function getName (str) {
-    if(str.lastIndexOf('\\')) {
-        var i = str.lastIndexOf('\\')+1;
-    }
-    else {
-        var i = str.lastIndexOf('/')+1;
-    }						
-    var filename = str.slice(i);			
-    var uploaded = document.getElementById("feedback__attachedfilename");
-    uploaded.innerHTML = filename;
-}
