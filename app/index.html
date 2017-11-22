@@ -538,13 +538,16 @@
 				<input type="text" class="feedback__input feedback__email" name="email" placeholder="Электронный адрес">
 				<input type="text" class="feedback__input feedback__phone" name="phone" placeholder="Телефон">
 			</div>
-			<textarea name="messa" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Комментарии"></textarea>
+			<textarea name="message" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Комментарии"></textarea>
 			<div class="feedback__row">
-				<div class="feedback__fileattach">
-					<div class="feedback__masktext">Прикрепить</div>
-					<div class="feedback__attachedfilename"></div>
-					<input name="file" type="file" name="upload" class="feedback__inputfile" />
+				<div class="feedback__attachedfiles">
+					<div class="feedback__fileattach">
+						<div class="feedback__masktext">Прикрепить</div>
+						<div class="feedback__attachedfilename"></div>
+						<input name="file[]" type="file" class="feedback__inputfile" />
+					</div>
 				</div>
+				
 				<input type="submit" class="feedback__submit" placeholder="Отправить">
 			</div>
 		</form>

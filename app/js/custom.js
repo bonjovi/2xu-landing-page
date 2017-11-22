@@ -1,9 +1,9 @@
 $(function() {
-	$(".owl-carousel").owlCarousel({
-		items: 4,
-		margin: 30,
-		loop: true,
-		nav: true,
+    $(".owl-carousel").owlCarousel({
+        items: 4,
+        margin: 30,
+        loop: true,
+        nav: true,
         autoplay:true,
         responsive: {
             0: {
@@ -15,7 +15,7 @@ $(function() {
             },
             autoplay:true
         }
-	});
+    });
 
     $('.reviews__review').hover(function() {
         $('.reviews__review:first-child').children('.reviews__athlet').removeClass('reviews__athlet_active');
@@ -47,7 +47,8 @@ $(function() {
         changedImage.attr('src', 'img/' + colorClass + '-' + picName);
     });
 
-    $('.feedback__inputfile').on('change', function() {
+    $('.feedback__row').on('change', '.feedback__inputfile', function() {
+        $(this).parent('.feedback__fileattach').clone().insertAfter($(this).parent('.feedback__fileattach'));
         
         var str = $(this).val();
         if(str.lastIndexOf('\\')) {
@@ -61,10 +62,14 @@ $(function() {
         console.log(filename);
         //console.log(uploaded);
         $(this).prev('.feedback__attachedfilename').text(filename);
+
+        
+        
     });
+
 
     
 
-	
+    
 });
 
