@@ -69,7 +69,36 @@
 
 
 }
+.deadline {
+	padding: 0 0 40px 0;
+
+	&__text {
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+    	margin-top: 14px;
+	}
+
+	&__title {
+		font-family: 'OpenSans Bold';
+		font-size: 1.1rem;
+		text-transform: uppercase;
+
+		&_orange {
+			color: $orange;
+			margin-right: 40px;
+		}
+
+		&_green {
+			color: $green;
+			margin-left: 40px;
+		}
+	}
+}
 .conditions {
+
+	
+
 	padding: 99px 0 122px 0;
 
 	&__icons {
@@ -96,32 +125,17 @@
 		line-height: 1.3rem;
 	}
 
-}
-.deadline {
-	padding: 0 0 40px 0;
+	&_second {
+		.conditions__image {
+			height: auto;
+			overflow: hidden;
 
-	&__text {
-		display: flex;
-		align-items: center;
-    	justify-content: center;
-    	margin-top: 14px;
-	}
-
-	&__title {
-		font-family: 'OpenSans Bold';
-		font-size: 1.1rem;
-		text-transform: uppercase;
-
-		&_orange {
-			color: $orange;
-			margin-right: 40px;
-		}
-
-		&_green {
-			color: $green;
-			margin-left: 40px;
+			img {
+				margin-bottom: -20px;
+			}
 		}
 	}
+
 }
 .feedback {
 	background-color: $darkgrey;
@@ -182,6 +196,7 @@
 		cursor: pointer;
 		background-color: $white;
 		box-sizing:border-box;
+		height: fit-content;
 
 		&:hover {
 			color: $white;
@@ -196,7 +211,7 @@
 	&__fileattach { 
 	    background-color: transparent;
 	    cursor: pointer;
-	    height: 100%;
+	    height: auto;
 	    overflow: hidden;
 	    padding: 0;
 	    position: relative;
@@ -260,6 +275,10 @@
 	    
 	}
 
+	&__attachedfiles {
+		width: 100%;
+	}
+
 	
 }
 
@@ -315,6 +334,28 @@
 	    	margin-top: 246px;
     		margin-left: 822px;
 	    }
+	}
+}
+.heading {
+	color: $black;
+	font-family: 'Din Cond Bold';
+	text-transform: uppercase;
+	font-size: 36px;
+	padding: 0;
+    margin: 0;
+
+	&_white {
+		color: $white;
+	}
+
+	&_lowercase {
+		text-transform: inherit;
+		color: $white;
+	}
+
+	&_conditions {
+		margin-top: -45px;
+    	margin-bottom: 80px;
 	}
 }
 .header {
@@ -382,28 +423,6 @@
 	}
 
 	
-}
-.heading {
-	color: $black;
-	font-family: 'Din Cond Bold';
-	text-transform: uppercase;
-	font-size: 36px;
-	padding: 0;
-    margin: 0;
-
-	&_white {
-		color: $white;
-	}
-
-	&_lowercase {
-		text-transform: inherit;
-		color: $white;
-	}
-
-	&_conditions {
-		margin-top: -45px;
-    	margin-bottom: 80px;
-	}
 }
 .howtomake {
 	padding:60px 0 90px 0;

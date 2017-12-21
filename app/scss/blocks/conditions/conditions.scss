@@ -1,4 +1,7 @@
 .conditions {
+
+	
+
 	padding: 99px 0 122px 0;
 
 	&__icons {
@@ -23,6 +26,17 @@
 		font-family: 'Din Regular';
 		text-transform: uppercase;
 		line-height: 1.3rem;
+	}
+
+	&_second {
+		.conditions__image {
+			height: auto;
+			overflow: hidden;
+
+			img {
+				margin-bottom: -20px;
+			}
+		}
 	}
 
 }

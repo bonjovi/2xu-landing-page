@@ -57,6 +57,7 @@
 		cursor: pointer;
 		background-color: $white;
 		box-sizing:border-box;
+		height: fit-content;
 
 		&:hover {
 			color: $white;
@@ -71,7 +72,7 @@
 	&__fileattach { 
 	    background-color: transparent;
 	    cursor: pointer;
-	    height: 100%;
+	    height: auto;
 	    overflow: hidden;
 	    padding: 0;
 	    position: relative;
@@ -133,6 +134,10 @@
 	    height: 30px; 
 	    z-index:20;
 	    
+	}
+
+	&__attachedfiles {
+		width: 100%;
 	}
 
 	

@@ -555,7 +555,7 @@
 </section>
 
 
-<section class="conditions">
+<section class="conditions conditions_second">
 	<div class="wrapper">
 		<h2 class="heading heading_conditions">Условия заказа</h2>
 		<div class="conditions__icons">
@@ -782,10 +782,12 @@
 			</div>
 			<textarea name="message" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Комментарии"></textarea>
 			<div class="feedback__row">
-				<div class="feedback__fileattach">
-					<div class="feedback__masktext">Прикрепить</div>
-					<div class="feedback__attachedfilename"></div>
-					<input name="file" type="file" name="upload" class="feedback__inputfile" onchange="getName(this.value);" />
+				<div class="feedback__attachedfiles">
+					<div class="feedback__fileattach">
+						<div class="feedback__masktext">Прикрепить</div>
+						<div class="feedback__attachedfilename"></div>
+						<input name="file[]" type="file" class="feedback__inputfile" />
+					</div>
 				</div>
 				<input type="submit" class="feedback__submit" placeholder="Отправить">
 			</div>
