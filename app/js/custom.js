@@ -48,8 +48,8 @@ $(function() {
     });
 
     $('.feedback__row').on('change', '.feedback__inputfile', function() {
-        $(this).parent('.feedback__fileattach').clone().insertAfter($(this).parent('.feedback__fileattach'));
-        
+        var clone = $(this).parent('.feedback__fileattach').clone().insertAfter($(this).parent('.feedback__fileattach'));
+         
         var str = $(this).val();
         if(str.lastIndexOf('\\')) {
             var i = str.lastIndexOf('\\')+1;
@@ -59,17 +59,14 @@ $(function() {
         }                       
         var filename = str.slice(i);            
         
-        console.log(filename);
-        //console.log(uploaded);
         $(this).prev('.feedback__attachedfilename').text(filename);
-
-        
+        $(this).parent('.feedback__fileattach').trigger('myTrigger');
         
     });
 
+    $('.feedback__fileattach').on('myTrigger', function() {
+            $(this).next().find('.feedback__inputfile')[0].files[0] = '';
+        });
 
-    
-
-    
 });
 
