@@ -680,6 +680,30 @@ textarea:-ms-input-placeholder {
   background: transparent url("../../app/img/athletes.jpg") 0 center no-repeat;
   background-size: cover; }
 
+.conditions {
+  padding: 99px 0 122px 0; }
+  .conditions__icons {
+    display: flex;
+    justify-content: space-around; }
+  .conditions__icon {
+    text-align: center; }
+  .conditions__image {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .conditions__title {
+    margin-top: 44px;
+    color: #000000;
+    font-family: 'Din Regular';
+    text-transform: uppercase;
+    line-height: 1.3rem; }
+  .conditions_second .conditions__image {
+    height: auto;
+    overflow: hidden; }
+    .conditions_second .conditions__image img {
+      margin-bottom: -20px; }
+
 .bonuses {
   border-top: 1px solid #f5f2f0;
   padding: 60px 0 138px 0; }
@@ -724,48 +748,6 @@ textarea:-ms-input-placeholder {
     color: #ffffff;
     font-size: 4rem;
     padding-left: 10px; }
-
-.deadline {
-  padding: 0 0 40px 0; }
-  .deadline__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 14px; }
-  .deadline__title {
-    font-family: 'OpenSans Bold';
-    font-size: 1.1rem;
-    text-transform: uppercase; }
-    .deadline__title_orange {
-      color: #eca847;
-      margin-right: 40px; }
-    .deadline__title_green {
-      color: #4fce91;
-      margin-left: 40px; }
-
-.conditions {
-  padding: 99px 0 122px 0; }
-  .conditions__icons {
-    display: flex;
-    justify-content: space-around; }
-  .conditions__icon {
-    text-align: center; }
-  .conditions__image {
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .conditions__title {
-    margin-top: 44px;
-    color: #000000;
-    font-family: 'Din Regular';
-    text-transform: uppercase;
-    line-height: 1.3rem; }
-  .conditions_second .conditions__image {
-    height: auto;
-    overflow: hidden; }
-    .conditions_second .conditions__image img {
-      margin-bottom: -20px; }
 
 .feedback {
   background-color: #282828;
@@ -873,6 +855,24 @@ textarea:-ms-input-placeholder {
   .feedback__attachedfiles {
     width: 100%; }
 
+.deadline {
+  padding: 0 0 40px 0; }
+  .deadline__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px; }
+  .deadline__title {
+    font-family: 'OpenSans Bold';
+    font-size: 1.1rem;
+    text-transform: uppercase; }
+    .deadline__title_orange {
+      color: #eca847;
+      margin-right: 40px; }
+    .deadline__title_green {
+      color: #4fce91;
+      margin-left: 40px; }
+
 .guarantees {
   width: 100%;
   height: 740px;
@@ -909,22 +909,6 @@ textarea:-ms-input-placeholder {
     .guarantees__bigtext_second {
       margin-top: 246px;
       margin-left: 822px; }
-
-.heading {
-  color: #000000;
-  font-family: 'Din Cond Bold';
-  text-transform: uppercase;
-  font-size: 36px;
-  padding: 0;
-  margin: 0; }
-  .heading_white {
-    color: #ffffff; }
-  .heading_lowercase {
-    text-transform: inherit;
-    color: #ffffff; }
-  .heading_conditions {
-    margin-top: -45px;
-    margin-bottom: 80px; }
 
 .header {
   width: 100%;
@@ -969,6 +953,22 @@ textarea:-ms-input-placeholder {
     margin-bottom: 28px;
     font-family: 'OpenSans Regular';
     font-size: 1.1rem; }
+
+.heading {
+  color: #000000;
+  font-family: 'Din Cond Bold';
+  text-transform: uppercase;
+  font-size: 36px;
+  padding: 0;
+  margin: 0; }
+  .heading_white {
+    color: #ffffff; }
+  .heading_lowercase {
+    text-transform: inherit;
+    color: #ffffff; }
+  .heading_conditions {
+    margin-top: -45px;
+    margin-bottom: 80px; }
 
 .howtomake {
   padding: 60px 0 90px 0; }
@@ -1304,11 +1304,28 @@ textarea:-ms-input-placeholder {
   .header {
     background-position: -300px center; } }
 
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 752px) {
+@media only screen and (max-width: 1200px) {
+  .header {
+    background: #282828 none; }
+    .header__text {
+      margin-left: 0; }
+    .header__question {
+      padding-top: 40px;
+      color: #fff; }
+    .header__slogan {
+      margin-left: 0;
+      color: #fff; }
+    .header__item {
+      padding-top: 40px;
+      color: #fff;
+      list-style-image: url(../../app/img/check-white.png);
+      margin-bottom: 5px; }
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box; } }
+
+@media only screen and (max-width: 768px) {
   .header {
     background-image: none;
     background-color: #282828;
@@ -1345,7 +1362,7 @@ textarea:-ms-input-placeholder {
       padding: 0 0 0 30px; }
     .header__item {
       padding-left: 15px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-size: 0.9rem; }
   .wrapper {
     width: 100%;

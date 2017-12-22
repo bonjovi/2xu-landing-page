@@ -10,14 +10,44 @@
 	}
 }
 
-
 @media only screen and (max-width: 1200px) {
+	.header {
+		background: #282828 none;
+
+		&__text {
+			margin-left: 0;
+		}
+
+		&__question {
+			padding-top: 40px;
+			color: #fff;
+		}
+
+		&__slogan {
+			margin-left: 0;
+			color: #fff;
+		}
+
+		&__item {
+			padding-top: 40px;
+			color: #fff;
+			list-style-image: url(../../app/img/check-white.png);
+			margin-bottom: 5px;
+		}
+	}
+
+	.wrapper {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+}
+
+@media only screen and (max-width: 992px) {
 
 }
 
-
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
 
 	.header {
 		background-image:none;
@@ -76,7 +106,7 @@
 
 		&__item {
 			padding-left: 15px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			font-size: 0.9rem;
 		}
 	}
