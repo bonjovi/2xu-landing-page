@@ -16,6 +16,7 @@
 
 		&__text {
 			margin-left: 0;
+			text-align: center;
 		}
 
 		&__question {
@@ -34,6 +35,10 @@
 			list-style-image: url(../../app/img/check-white.png);
 			margin-bottom: 5px;
 		}
+
+		&__list {
+			display: inline-block;
+		}
 	}
 
 	.wrapper {
@@ -41,9 +46,152 @@
 		padding: 0 20px;
 		box-sizing: border-box;
 	}
+
+	.models {
+		&__price {
+			padding: 36px 85px 36px 85px;
+		}
+	}
+
+
+	.reviews {
+		&__athlet {
+			display: none;
+		}
+
+		&__review {
+			width: 50%;
+		}
+	}
+
+	.bonuses {
+		&__text {
+			padding-left: 0;
+		}
+
+		&__content {
+			justify-content: center;
+		}
+	}
+
+	.athletes {
+	    height: auto;
+	    background-size: cover;
+	    background-position: top center;
+	    min-height: 330px;
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
+	.models {
+		&__title {
+			display: block;
+		}
+
+		&__mobileicon {
+			display: block;
+		}
+
+		&__tabname, &__tabdesc {
+			display: none;
+		}
+
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__left, &__right, &__image {
+			width: 100%;
+		}
+
+		&__download {
+			display: block;
+    		width: 100%;
+    		padding:15px 0;
+    		box-sizing: border-box;
+		}
+
+		&__right {
+			margin-left: 0;
+		}
+
+		&__price {
+			margin: 0;
+			width: 100%;
+			padding: 20px 0 20px 0;
+			justify-content: center;
+		}
+
+		&__colors {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__color {
+			margin-bottom: 20px;
+		}
+
+		&__circle {
+	    	width: 30px;
+	    	height: 30px;
+	    }
+
+	    &__tab {
+	    	padding: 0;
+	    	background-color: transparent;
+	    }
+
+	    &__colorname {
+	    	font-size: 0.9rem;
+	    }
+
+		tr {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+		}
+
+		&__td, &__th {
+			display: block;
+			width: 15.5%;
+			padding-left:0;
+			padding-right: 0;
+			margin-bottom: 0;
+			border:0;
+		}
+
+		&__th:first-child,
+		&__td:first-child {
+			text-align: center;
+			background: #efefef;
+			width: 100%;
+		}
+
+		&__th:first-child {
+			
+		}
+	}
+
+	.guarantees {
+
+		background: transparent url(../../app/img/guarantees_bg.jpg) -260px 0 no-repeat;
+
+		&__smalltext_third {
+		    margin-left: 268px;
+		}
+
+		&__bigtext_second {
+		    margin-left: 222px;
+		}
+
+		&__smalltext_fourth {
+		    margin-left: 268px;
+		}
+
+	}
+
+
 
 }
 
@@ -117,9 +265,6 @@
     	box-sizing: border-box;
 	}
 
-
-
-
 	.conditions {
 		padding: 30px 0 0 0;
 
@@ -177,95 +322,6 @@
 		}
 	}
 
-	.models {
-		&__title {
-			display: block;
-		}
-
-		&__mobileicon {
-			display: block;
-		}
-
-		&__tabname, &__tabdesc {
-			display: none;
-		}
-
-		&__content {
-			flex-wrap: wrap;
-		}
-
-		&__left, &__right, &__image {
-			width: 100%;
-		}
-
-		&__download {
-			display: block;
-    		width: 100%;
-    		padding:15px 0;
-    		box-sizing: border-box;
-		}
-
-		&__right {
-			margin-left: 0;
-		}
-
-		&__price {
-			margin: 0;
-			width: 100%;
-			padding: 20px 0 20px 0;
-			justify-content: center;
-		}
-
-		&__colors {
-			flex-wrap: wrap;
-			justify-content: flex-start;
-		}
-
-		&__color {
-			margin-bottom: 20px;
-		}
-
-		&__circle {
-	    	width: 30px;
-	    	height: 30px;
-	    }
-
-	    &__tab {
-	    	padding: 0;
-	    	background-color: transparent;
-	    }
-
-	    &__colorname {
-	    	font-size: 0.9rem;
-	    }
-
-		tr {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-around;
-		}
-
-		&__td, &__th {
-			display: block;
-			width: 15.5%;
-			padding-left:0;
-			padding-right: 0;
-			margin-bottom: 0;
-			border:0;
-		}
-
-		&__th:first-child,
-		&__td:first-child {
-			text-align: center;
-			background: #efefef;
-			width: 100%;
-		}
-
-		&__th:first-child {
-			
-		}
-	}
-
 	.owl-carousel {
 		.owl-nav {
 			display: none;
@@ -320,7 +376,6 @@
 	    height: 720px;
 	    
 	    background-position: 54% 24%;
-	    margin-bottom: -100px;
 
 	    .heading {
 	    	text-align: right;
